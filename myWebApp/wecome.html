@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>欢迎页面</title>
+    <link rel="stylesheet" type="text/css" href="../themes/metro/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../themes/mobile.css">
+    <link rel="stylesheet" type="text/css" href="../themes/icon.css">
+    <script type="text/javascript" src="../jquery.min.js"></script>
+    <script type="text/javascript" src="../jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../jquery.easyui.mobile.js"></script>
+</head>
+<body>
+<div class="easyui-navpanel">
+    <header>
+        <div class="m-toolbar">
+            <div class="m-title">大炮彩票</div>
+            <div class="m-left">
+                <a href="login.html" class="easyui-linkbutton" style="border: none" plain="true" outline="true">登录</a>
+            </div>
+            <div class="m-right">
+                <a href="register.html" class="easyui-linkbutton" style="border: none" plain="true"
+                   outline="true">注册</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="items" style="padding:0;">
+        <div id="m-home" class="m-item">
+            <section class="slider" style="margin: 0">
+                <img src="http://cpweb.kosungames.com/cp77.kosungames.com/upload/591186b884070.png" style="width: 100%">
+            </section>
+
+            <section class="notice-area" style="border-radius: 10px;margin: 10px;padding: 10px" >
+                <header  >
+                    <img src="images/account.png" style="width: 20px" height="20px"><span>大声道撒多</span>
+                </header>
+                <hr>
+                <article>
+
+                </article>
+            </section>
+
+            <section class="game-area">
+
+            </section>
+
+            <section class="win-area">
+
+            </section>
+        </div>
+
+        <div id="m-cart" class="m-item" style="display:none">
+
+        </div>
+        <div id="m-win" class="m-item" style="display:none">
+
+        </div>
+
+        <div id="m-down" class="m-item" style="display:none">
+
+        </div>
+
+        <div id="m-setting" class="m-item" style="display:none">
+
+            <section>
+                <div class="logined" style="padding: 5px;display: flex">
+                    <img src="images/account.png" style="width: 50px;height: 50px;">
+                    <div class="userinfo" style="display: flex;flex-direction: column">
+                        <div class="username" style="display: block; margin: 5px">
+                            大炮
+                        </div>
+                        <div class="user-balance" style="display: block;margin: 5px">
+                            <img src="images/trade.png" style="width: 20px;height: 20px;">
+                            <span> 2000.000 </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <div class="transaction" style="padding: 10px;display: flex">
+                    <div class="topUp" style="flex: 1;text-align: center"><span>充值</span></div>
+                    <div class="withdraw" style="flex: 1;text-align: center"><span>提现</span></div>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <ul class="m-list" style="padding: 0;margin: 0">
+                    <li><a href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-large-manage-order',size:'small',iconAlign:'left',plain:true"
+                           style="text-align: left">&nbsp 投注记录</a></li>
+                    <li><a href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-large-office',size:'small',iconAlign:'left',plain:true"
+                           style="text-align: left">&nbsp 账户明细</a></li>
+                    <li><a href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-large-trade',size:'small',iconAlign:'left',plain:true"
+                           style="text-align: left">&nbsp 充值记录</a></li>
+                    <li><a href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-large-jewelry',size:'small',iconAlign:'left',plain:true"
+                           style="text-align: left">&nbsp 提现记录</a></li>
+                    <li><a href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-large-nav-list',size:'small',iconAlign:'left',plain:true"
+                           style="text-align: left">&nbsp 玩法规则</a></li>
+                    <li><a href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-large-set',size:'small',iconAlign:'left',plain:true"
+                           style="text-align: left">&nbsp 详细设定</a></li>
+                    <li><a href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-large-libra',size:'small',iconAlign:'left',plain:true"
+                           style="text-align: left">&nbsp 奖金详情</a></li>
+                    <li><a href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-large-folder',size:'small',iconAlign:'left',plain:true"
+                           style="text-align: left">&nbsp 我的收藏</a></li>
+                    <li><a href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-large-remind',size:'small',plain:true" style="text-align: left">&nbsp
+                        信息公告</a></li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+    <footer style="padding:2px 3px">
+        <div class="m-buttongroup m-buttongroup-justified" style="width:100%">
+            <a href="javascript:void(0)" class="easyui-linkbutton"
+               data-options="iconCls:'icon-large-all',size:'small',iconAlign:'top',plain:true"
+               onclick="showContent('#m-home')">主页</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" data-badge="3"
+               data-options="iconCls:'icon-large-cart',size:'small',iconAlign:'top',plain:true"
+               onclick="showContent('#m-cart')">购彩<span class="m-badge">4</span></a>
+            <a href="javascript:void(0)" class="easyui-linkbutton"
+               data-options="iconCls:'icon-large-gifts',size:'small',iconAlign:'top',plain:true"
+               onclick="showContent('#m-win')">开奖</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton"
+               data-options="iconCls:'icon-large-survey',size:'small',iconAlign:'top',plain:true"
+               onclick="showContent('#m-down')">下注</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" data-badge="2"
+               data-options="iconCls:'icon-large-account',size:'small',iconAlign:'top',plain:true"
+               onclick="showContent('#m-setting')">设置<span class="m-badge">1</span></a>
+        </div>
+    </footer>
+</div>
+
+
+<script>
+    function showContent(id) {
+        $('div.m-item').hide();
+        $(id).show();
+    }
+</script>
+
+<style>
+    section {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+</style>
+
+</body>
+</html>
